@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int j;
+void isprime(int start, int end){
+    for(int i=start;i<=end;i++){
+        for(j=2;j<=i-1;j++){
+            if(i%j==0){
+                break;
+            }
+            if(j==i-1){
+                cout<<i;
+            }
+        }
+    }
+}
+int main(){
+    int a,b;
+    cin>>a>>b;
+    isprime(a,b);
+}
